@@ -1,0 +1,3 @@
+- edit Config.groovy and add another case to the switch statement
+- in web-app, add a dir for the site in css and js
+- create a layout for it

@@ -1,0 +1,67 @@
+body {
+    background-color: #000000;
+}
+
+.pageBody {
+    background-color: white;
+}
+
+.leftContent {
+    width: 20%;
+    float:left;
+}
+
+.mast, .logoHolder {
+    background-color: #15345B;
+    height: 120px;
+}
+
+.mast .mastRight {
+    float:right;
+    width:200px;
+    height: 100px;
+}
+.mast ul {
+    display:block;
+    width:100%;
+    background-color: #D6D6D6;
+    height: 17px;
+}
+
+.mast li {
+    display:inline-block;
+    margin:0 9%;
+    
+}
+.mast li a {
+    color:black;
+}
+
+.mainContent {
+    float:left;
+    width:80%;
+}
+
+.mastRight a {
+    margin:35px auto;
+    text-align: center;
+    display: block;
+}
+
+.innerContent {
+    width:98%;
+    padding:15px;
+}
+#tabContent li {
+    padding:5px;
+}
+#tabContent li.active, #tabContent li:hover  {
+    background-color:#ddd;
+}
+#tabContent li a {
+    color: blue;
+}
+
+#tabs li {
+    list-style: none;
+}

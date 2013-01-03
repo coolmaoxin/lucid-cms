@@ -1,0 +1,616 @@
+h1 {
+    margin: 0 0 0.5em;
+}
+
+.header-logo {
+    position: relative;
+    float: left;
+    height: 142px
+}
+
+.header-contact {
+    position: relative;
+    float: right;
+    color: white;
+    font-size: 14px;
+    padding-top: 25px;
+    font-weight: bold;
+    padding-right: 15px;
+}
+
+.header {
+    height: 142px;
+}
+
+body {
+    /*background-image: url("../images/background.gif");*/
+    background-repeat: repeat;
+}
+
+.pageBody {
+    margin: 0 5%;
+    width: 90%;
+}
+
+#footerContent {
+    padding: 5px;
+    clear: both
+}
+
+#footerContent #loginSuccessMessage {
+    float: right;
+    position: relative;
+}
+
+#leftNav {
+    width: 23%;
+    position: relative;
+    float: left;
+    display: inline;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#rightContent {
+    width: 77%;
+    position: relative;
+    float: right;
+    display: inline;
+}
+
+#rightInnerContent {
+    margin: 0 15px;
+}
+
+.hidden {
+    display: none
+}
+
+.warning {
+    color: red;
+    padding: 0 5px
+}
+.clear {
+    clear:both;
+}
+
+table td {
+    vertical-align: middle;
+}
+
+#rightInnerContent iframe {
+    width: 99%;
+    border: 0;
+}
+
+#rightInnerContent p {
+    margin: 8px 0;
+}
+
+#rightInnerContent strong, #rightInnerContent h3 {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+#loginFailedMessage, .red {
+    color: red
+}
+
+#loginSuccessMessage {
+    color: green
+}
+
+#adminTab {
+    border-top: 1px solid blue !important;
+    border-left: 1px solid blue !important;
+    border-right: 1px solid blue !important;
+}
+
+.pad10 {
+    padding: 10px
+}
+
+a.link {
+    color: blue;
+    text-decoration: underline
+}
+
+a.link:hover {
+    color: #6666ff;
+    text-decoration: underline
+}
+
+/* side menu bar */
+#leftNav p.flag:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: solid 3px #fff;
+    border-color: transparent #FFC32C #FFC32C transparent;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    -webkit-transform: skew(10deg, 0deg) translate(-1px, 0);
+    transform: skew(10deg, 0deg);
+}
+
+#leftNav p.flag, .flag em {
+    background-color: #FFDA4A;
+    background-image: -moz-linear-gradient(left center, #FFDA4A, #FFC32C);
+}
+
+#leftNav p.flag em {
+    -moz-transform: skew(10deg, 0deg);
+    border-color: #FFFFFF -moz-use-text-color #FFFFFF #FFFFFF;
+    border-style: solid none solid solid;
+    border-width: 1px 0 1px 1px;
+    display: block;
+    font-style: normal;
+    margin: -1px 5px -1px -6px;
+    padding: 4px 0;
+    text-indent: 7px;
+}
+
+#leftNav p.flag {
+    width: 100%;
+    -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    -moz-transform: skew(-10deg, 0deg);
+    border: 1px solid #FFFFFF;
+    color: #3D1F12;
+    font-weight: bold;
+    left: -5px;
+    margin: 0;
+    position: relative;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    font-family: "Trebuchet MS", "MS Trebuchet", Trebuchet, Helvetica, Arial;
+}
+
+#leftNav li {
+    list-style: none outside none;
+    white-space: nowrap;
+}
+
+#leftNav li.link {
+    height: 1.5em;
+    margin: 2px 0;
+    padding: 1px 6px;
+    width: 95%
+}
+
+#leftNav ul {
+    position: relative;
+    left: -8px;
+    margin-bottom: 10px
+}
+
+#leftNav ul, #leftNav p.flag {
+    top: 14px;
+}
+
+#leftNav a {
+    display: block
+}
+
+#leftNav .flag {
+    position: absolute; /*font-weight: bold;*/
+    text-transform: uppercase;
+    color: #3D1F12; /*font-size: 1.4em;*/
+    border: solid 1px #fff;
+    top: 14px;
+    left: -3px;
+    width: 380px;
+    margin: 0;
+
+    text-shadow: rgba(255, 255, 255, 0.5) 0 1px 0;
+
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 3px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 3px;
+    box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 3px;
+
+    -webkit-transform: skew(-10deg, 0deg);
+    -moz-transform: skew(-10deg, 0deg);
+    -o-transform: skew(-10deg, 0deg);
+    transform: skew(-10deg, 0deg);
+}
+
+#leftNav .flag,
+#leftNav .flag em {
+    background-color: #FFDA4A;
+    background-image: -moz-linear-gradient(left, #FFDA4A, #FFC32C); /* FF3.6 */
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #FFDA4A), color-stop(1, #FFC32C)); /* Saf4+, Chrome */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#FFDA4A', EndColorStr = '#FFC32C'); /* IE6,IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFDA4A', EndColorStr='#FFC32C')"; /* IE8 */
+}
+
+#leftNav .flag em {
+    text-indent: 47px;
+    padding: 4px 0 4px 0;
+    margin: -1px 5px -1px -6px;
+    border: solid 1px #fff;
+    border-right: 0;
+    display: block;
+    -webkit-transform: skew(10deg, 0deg);
+    -moz-transform: skew(10deg, 0deg);
+    -o-transform: skew(10deg, 0deg);
+    transform: skew(10deg, 0deg);
+    font-style: normal;
+}
+
+#leftNav .flag:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: solid 3px #fff;
+    border-color: transparent #FFC32C #FFC32C transparent;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+
+    -webkit-transform: skew(10deg, 0deg) translate(-1px, 0);
+    transform: skew(10deg, 0deg);
+}
+
+/* featured vt */
+.featuredVisualTour {
+    position: relative;
+    top: 20px;
+    margin-bottom: 10px;
+}
+
+table.featuredVisualTour {
+    width: 97% !important;
+}
+
+.featuredVisualTour img {
+    border: 1px solid #333;
+    width: 99%
+}
+
+.featuredVisualTour .tagLine {
+    font-size: 1.1em;
+    font-weight: bold
+}
+
+.featuredVisualTour .priceL {
+    position: relative;
+    float: left
+}
+
+.featuredVisualTour .priceR {
+    position: relative;
+    float: right;
+}
+
+/* jquery ui overrides */
+.ui-tabs .ui-tabs-panel {
+    padding: 1em 0 !important;
+}
+
+#rightInnerContent, .mceContentBody {
+    font-size: 1.2em
+}
+
+#rightInnerContent .ui-tabs-nav {
+    font-size: 1em
+}
+
+/* scaffolding */
+.scaffold table {
+    width: 100%;
+}
+
+.scaffold .prop input {
+    width: 50%
+}
+
+.body {
+    width: 100%;
+    margin: 0 !important
+}
+
+/*mls listings*/
+#mlsListings table {
+    width: 100%
+}
+
+#mlsListings table .value {
+    cursor: pointer
+}
+
+.searchSlider {
+    padding: 5px 9px;
+    border: 1px solid #ccccff;
+    margin: 5px 0
+}
+
+.searchSlider input {
+    width: 3em;
+    text-align: right;
+    padding: 0;
+    border: 0;
+}
+
+.searchSlider .input {
+    border: 1px solid #CCC;
+    padding: 1px;
+    background-color: #FFF
+}
+
+.searchSlider .ui-slider {
+    margin-top: 5px
+}
+
+.searchSlider .data {
+}
+
+.listingPopup img {
+    cursor: pointer
+}
+
+/* mls listings - towns search */
+.towns {
+    border: 1px solid #ccccff;
+    padding: 2px;
+}
+
+#towns {
+    height: 140px;
+    overflow-y: auto;
+}
+
+.towns ul {
+    padding-bottom: 5px;
+}
+
+.towns li {
+    white-space: normal !important;
+}
+
+.towns input#distance {
+    width: 1.5em;
+    font-size: 11px;
+    border: 1px solid #ccc;
+}
+
+.towns input#location {
+    width: 3.5em;
+    font-size: 11px;
+    border: 1px solid #ccc;
+}
+
+.towns .distance {
+    position: relative;
+    float: right;
+    padding-right: 3px;
+}
+
+.towns label {
+    display: inline;
+}
+
+/*signup form*/
+.uniForm .buttonHolder {
+    margin: 2px 0;
+    padding: 5px;
+}
+
+.uniForm .ctrlHolder {
+    padding: 5px
+}
+
+/* logged in user */
+.userBar {
+    padding: 0 0 3px 3px;
+    background: -moz-linear-gradient(top left, #AED0EA, white) !important;
+}
+
+/* detailed mls listings */
+.detailedListing .details {
+    width: 40%;
+    position: relative;
+    float: left;
+}
+
+.detailedListing .details table {
+    width: 100%;
+    border: none !important;
+    font-size: 13px;
+}
+
+.detailedListing .picture {
+    width: 60%;
+    position: relative;
+    float: right;
+}
+
+.detailedListing .address {
+    border-bottom: 1px solid #ccc;
+}
+
+.detailedListing .address h1 {
+    font-size: 170%;
+    margin-bottom: 3px;
+}
+
+.important {
+    border-bottom: 1px dashed #00008b
+}
+
+/* products products products productsproductsproductsproductsproducts products*/
+
+.products {
+    width:95%;
+}
+.products .row {
+    border-bottom: 1px dotted #CCC;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.products a.productDetailsLink {
+    cursor: pointer;
+    display: inline-block;
+    font: 12px/16px Arial, Helvetica, sans-serif;
+    height: auto;
+    margin: 0 10px 0 0;
+    padding: 0 10px 0 3px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.products .title a {
+    display: inline-block;
+    font: bold 12px/16px Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: none;
+    width: auto;
+}
+
+.products .title a:hover, .products a.productDetailsLink:hover {
+    color: #FD4A04;
+    text-decoration: none;
+}
+.products .imageRight {
+    float:right;
+    width:230px;
+}
+.products .productImage {
+    cursor: pointer;
+}
+.products h2.title {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 3px;
+    padding: 10px 0;
+}
+.products .price {
+    color: #FD4A04;
+    display: block;
+    font: bold 19px Arial,Helvetica,sans-serif;
+    padding: 0;
+}
+.products .oldPrice {
+    color: #656363;
+    font: 15px Arial,Helvetica,sans-serif;
+    padding: 0 0 0;
+    text-decoration: line-through;
+}
+.products .shortDesc {
+    float: none;
+    margin: 0;
+    padding: 0 0 10px;
+    width: 100%;
+}
+/* edit product images (admin)*/
+
+#gallery {
+margin-bottom: 20px;
+width: 100%;
+overflow: hidden;
+}
+ul#gallery {
+    list-style:none;
+}
+#gallery li {
+float: left;
+margin: 0 10px;
+width: 230px;
+height: 193px;
+position: relative;
+color: #000;
+}
+#gallery li img {
+padding: 6px;
+background: #ececec;
+border: 1px solid #ccc;
+}
+#gallery li h3 {
+font: bold 11px Helvetica,Arial,sans-serif;
+padding: 0;
+margin: 0;
+}
+#gallery li span {
+font-size: 11px;
+position: absolute;
+bottom: 7px;
+left: 0px;
+padding: 9px;
+width: 224px;
+line-height: 1.2em;
+background: url(common/bg_white_trans.png) repeat;
+}
+/* edit product images end */
+
+/* validation start*/
+.error{
+    background-color: #EDEDED;
+    border: 1px solid red;
+    color: red;
+    font-size: 11px;
+    line-height: 1em;
+    padding: 3px 9px;
+    position: relative;
+    text-align: center;
+    width: auto;
+    z-index:1006;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 0 5px red;
+    -webkit-box-shadow: 0 0 5px red;
+}
+
+.error p {
+    margin:3px;
+}
+
+.error p:after {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 7px;
+    height: 0;
+    width: 0;
+    position: absolute;
+    content: "";
+}
+
+.error:after {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 7px;
+    height: 0;
+    width: 0;
+    content: "";
+    position: absolute;
+}
+
+/*error div appears to the right of the input*/
+.error {
+    margin-left: 10px;
+}
+
+.error p:after {
+    border-color: transparent red transparent transparent;
+    left: -15px;
+    top: 4px;
+}
+
+.error:after {
+    border-color: transparent #EDEDED transparent transparent;
+    left: -14px;
+    top: 4px;
+}
+/* validation end*/

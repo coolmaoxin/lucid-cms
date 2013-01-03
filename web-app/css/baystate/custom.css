@@ -1,0 +1,8 @@
+.header {
+    background: url("../../images/baystate/logo-long.jpg") repeat scroll 110px -5px transparent;
+    height: 142px
+}
+
+body {
+    background-image: url("../../images/baystate/background.gif");
+}
